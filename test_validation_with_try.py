@@ -9,10 +9,6 @@ class AverageTestCase(unittest.TestCase):
     def test_average_exceptiont(self):
         with self.assertRaises(ValueError):
             vwt.average(-90, 89, 78)
-try:
-    num = int("string")
-except ValueError:
-    raise ValueError("ValueError exception thrown")
 
 if __name__ == '__main__':
     unittest.main()
