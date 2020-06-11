@@ -21,6 +21,16 @@ class MyTestCase(unittest.TestCase):
         self.assertAlmostEqual(((cc.calculate_price(value_under_between_ten_thirty, 10,10) + shipping)*1.06), 17.00, places=2)
         self.assertAlmostEqual(((cc.calculate_price(value_under_between_ten_thirty, 10, 15) + shipping)*1.06), 16.53, places=2)
         self.assertAlmostEqual(((cc.calculate_price(value_under_between_ten_thirty, 10, 20) + shipping)*1.06), 16.05, places=2)
+    def test_price_under_between_thirty_fifty(self):
+        value_under_between_thirty_fifty = 38.99
+        shipping = 11.95
+        self.assertAlmostEqual(((cc.calculate_price(value_under_between_thirty_fifty, 5,10) + shipping)*1.06), 45.09, places=2)
+        self.assertAlmostEqual(((cc.calculate_price(value_under_between_thirty_fifty, 5, 15) + shipping)*1.06), 43.29, places=2)
+        self.assertAlmostEqual(((cc.calculate_price(value_under_between_thirty_fifty, 5, 20) + shipping)*1.06), 41.49, places=2)
+        self.assertAlmostEqual(((cc.calculate_price(value_under_between_thirty_fifty, 10,10) + shipping)*1.06), 40.32, places=2)
+        self.assertAlmostEqual(((cc.calculate_price(value_under_between_thirty_fifty, 10, 15) + shipping)*1.06), 38.79, places=2)
+        self.assertAlmostEqual(((cc.calculate_price(value_under_between_thirty_fifty, 10, 20) + shipping)*1.06), 37.25, places=2)
+
 
 if __name__ == '__main__':
     unittest.main()
