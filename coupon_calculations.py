@@ -28,13 +28,17 @@ def calculate_price(price, cash_coupon, percent_coupon):
 
 def calculate_shipping(pre_shipping_cost):
     if pre_shipping_cost < 10.00:
-        with_shipping = pre_shipping_cost + 5.95
+        shipping = 5.95
+        with_shipping = pre_shipping_cost + shipping
     if 10.00 <= pre_shipping_cost < 30.00:
-        with_shipping = pre_shipping_cost + 7.95
+        shipping = 7.95
+        with_shipping = pre_shipping_cost + shipping
     if 30.00 <= pre_shipping_cost < 50.00:
-        with_shipping = pre_shipping_cost + 11.95
+        shipping = 11.95
+        with_shipping = pre_shipping_cost + shipping
     if pre_shipping_cost >= 50.00:
-        with_shipping = pre_shipping_cost + 0.00
+        shipping = 0.00
+        with_shipping = pre_shipping_cost + shipping
     return with_shipping
 
 price = float(input("Price of item:$ "))
