@@ -32,7 +32,7 @@ score2 = int(input('score 2: '))
 score3 = int(input('score 3: '))
 #Calculate average scores
 average_scores = average(score1, score2, score3)
-print(average_sco
+print(average_scores)
 
 if __name__ == '__main__':
     pass
