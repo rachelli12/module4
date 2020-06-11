@@ -10,6 +10,8 @@ def average(score1, score2, score3):
         print("score1 is within range.")
     if 0<score2<=100:
         print("score2 is within range.")
+    if 0<score3<=100:
+        print("score3 is within range.")
     else:
         print("score must be positive.")
         raise ValueError
