@@ -1,6 +1,6 @@
 import unittest
 import unittest.mock as mock
-from input_validation import validation_with_try as vwt
+import validation_with_try as vwt
 
 class AverageTestCase(unittest.TestCase):
     def test_average(self):
@@ -12,4 +12,3 @@ class AverageTestCase(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
