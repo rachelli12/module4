@@ -8,8 +8,10 @@ def average(score1, score2, score3):
     NUMBER_TESTS = 3
     if 0<score1<=100:
         print("score1 is within range.")
+    if 0<score2<=100:
+        print("score2 is within range.")
     else:
-        print("score1 must be positive.")
+        print("score must be positive.")
         raise ValueError
     return float((score1 + score2 + score3)/NUMBER_TESTS)
 
