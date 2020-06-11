@@ -1,5 +1,9 @@
 """"
-Program
+Program name: test_coupon_calculations.py
+Author: Rachel Li
+Last date modified: 06/10/2020
+
+The purpose of this program is to test coupon_calculations.py
 """
 import unittest
 import coupon_calculations as cc
