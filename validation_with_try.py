@@ -1,3 +1,11 @@
+"""
+Program name: validation_with_try.py
+Author name: Rachel Li
+Last date modified: 06/10/2020
+
+The purpose of this program is to use input validation
+to make user_input positive.
+"""
 NUMBER_TESTS = 3
 def average():
     #Get input for scores
