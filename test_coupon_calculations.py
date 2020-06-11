@@ -3,7 +3,7 @@ Program
 """
 import unittest
 import unittest.mock as mock
-from store import coupon_calculations as cc
+import coupon_calculations as cc
 
 class MyTestCase(unittest.TestCase):
     #def calculate_price(price, cash_coupon, percent_coupon):
