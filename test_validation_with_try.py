@@ -1,3 +1,10 @@
+"""
+Program name: test_validation_with_try.py
+Author: Rachel Li
+Last date modified: 06/10/2020
+
+Purpose of this program is to test validation_with_try.py
+"""
 import unittest
 import unittest.mock as mock
 import validation_with_try as vwt
