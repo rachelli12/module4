@@ -34,7 +34,6 @@ def calculate_shipping(pre_shipping_cost):
         shipping = 7.95
         with_shipping = pre_shipping_cost + shipping
     if 30.00 <= pre_shipping_cost < 50.00:
-        shipping = 11.95
         with_shipping = pre_shipping_cost + shipping
     if pre_shipping_cost >= 50.00:
         shipping = 0.00
